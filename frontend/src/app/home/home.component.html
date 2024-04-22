@@ -1,0 +1,44 @@
+<div class="wrapper">
+
+  <div class="section features-1 csvback" id="csv">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-8 mx-auto text-center">
+          <h3 class="display-3">Emotion Detection AI</h3>
+          <p class="lead">
+            All-encompassing Analysis needs in one easy and
+            affordable tool. Collaborate with everyone in real-time.
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-12 text-center pl-5 pr-5 pb-5">
+            <label for="formFile" class="form-label text-center fa-2x"><b>Upload Image Here</b></label>
+            <input class="form-control text-center" type="file" (change)="onFileChange($event)" id="formFile"
+              accept="image/jpeg , image/png ,image/jpg">
+          </div>
+
+          <div class="col-md-12 text-center pl-5 pr-5 pb-4">
+
+          </div>
+
+
+          <div class="col-12">
+            <img src="data:image/png;base64,{{allData}}" style="width: 180px; height: 140px; " />
+          </div>
+
+          <div class="col-12 mb-5"> <button class="btn btn-primary btn-block text-center p-3" type="button"
+              (click)="uploadFile()" style="background: #198754; border: #198754;">Analyis</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- <ngx-spinner size="medium"></ngx-spinner> -->
+</div>
